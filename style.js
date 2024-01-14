@@ -1,5 +1,5 @@
 function navigateToNextPage() {
-    window.location.href = 'index.html'; 
+    window.location.href = 'main.html'; 
 }
 
 
