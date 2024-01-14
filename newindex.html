@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        .main{
+            height: auto;
+            width: auto;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+        .form{
+            height: auto;
+            width: auto;
+            margin: 5px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="form">
+            <div id="newsFormContainer">
+                <form id="newsForm" onsubmit="submitNews(event)">
+                    <label for="news_heading">News Heading:</label>
+                    <input type="text" id="news_heading" required>
+         
+                    <label for="news_description">Description:</label>
+                    <textarea id="news_description" rows="4" required></textarea>
+         
+                    <label for="author_name">Author Name:</label>
+                    <input type="text" id="author_name" required>
+         
+                    <label for="news_category">Category:</label>
+                    <select id="news_category" required>
+                        <option value="politics">Politics</option>
+                        <option value="technology">Technology</option>
+                        <option value="sports">Sports</option>
+                        <option value="entertainment">Entertainment</option>
+                   
+                    </select>
+         
+                    <label for="image_upload">Upload Images:</label>
+                    <input type="file" id="image_upload" accept="image/*" multiple>
+         
+                    <!-- <button id="navigateButton"  onclick="submitNews()">Submit News</button>
+                     -->
+                     <button id="navigateButton">Submit</button>
+        </div>
+    </div>
+<script src="style.js"></script>
+
+
+</body>
+</html>
